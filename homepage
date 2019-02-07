@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>site with video background</title>
+
+	<style type="text/css">
+		
+
+
+		*{
+   margin: 0;
+   padding: 0;
+   font-family: 'thapaneon';
+  }
+
+  header{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+  }
+
+  @font-face{
+   font-family: 'thapaneon';
+   src:url('neon2.ttf') format('truetype');
+  }
+
+  #videoid{
+   position: fixed;
+   z-index: -1;
+  }
+
+  #centerdiv{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   color: white;
+   transform: translate(-50% , -50%);
+   text-align: center;
+   font-size: 2rem;
+   text-shadow: 2px 4px 4px purple;
+  }
+
+  .btn{
+   padding: 15px;
+   background-color: purple;
+   font-size: 1.3rem;
+   border:none;
+   margin-top: 20px;
+   color: white;
+  }
+
+  #sec1{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('image/bike.jpg');
+   background-size: 100%, 100%;
+   position: relative;
+  }
+
+  #sec2{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('image/it1.jpg');
+   background-size: 100%, 100%;
+   position: relative;
+  }
+  #footer{
+   width: 100%;
+   line-height: 50px;
+   background-color: purple;
+   color: white;
+   text-align: center;
+  }
+	</style>
+</head>
+
+<body>
+
+<header>
+ <div id="centerdiv">
+  <h1>RESPONSIVE VIDEO BACKGROUND</h1>
+  <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA?view_as=subscriber" target="_blank"><button class="btn">Awesome</button></a>
+ </div>
+ <video id="videoid" autoplay loop muted >
+  <source src="Bootstrap image gallery.mp4" type="video/mp4">
+ </video>
+</header>
+
+<section id="sec1">
+ <div id="centerdiv">
+  <h1>THIS IS SIMPLY AWESOME</h1>
+ </div>
+</section>
+
+<section id="sec2">
+ <div id="centerdiv">
+  <h1>THIS IS SIMPLY AWESOME</h1>
+  <h1>THAPA TECHNICAL</h1>
+ </div>
+</section>
+
+<footer id="footer">
+ <h3>thapatechnical</h3>
+</footer>
+
+</body>
+</html>
